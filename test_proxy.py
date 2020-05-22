@@ -16,6 +16,5 @@ class TestProxy(unittest.TestCase):
         test.get_proxy_list = MagicMock(return_value=['111.111.11:2222'])
         self.assertEqual("There are no working proxies at this time.", test.get())
 
-
 if __name__ == '__main__':
     unittest.main()

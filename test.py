@@ -1,12 +1,12 @@
-from free_proxy import FreeProxy
+from fp.fp import FreeProxy
 
-x = FreeProxy(country_id=['PL']).get()
+x = FreeProxy().get()
 # print(x)
 # print(type(x))
 if x is None:
     print('TAK')
 else:
-    print('NIE')
+    print(x)
 # page = requests.get('http://icanhazip.com', proxies={'http': x}, stream=True)
 # print(page.raw._connection.sock.getpeername()[0])
 # print(x.split(':')[0])
